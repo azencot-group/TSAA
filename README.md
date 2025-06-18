@@ -2,13 +2,13 @@
 
 
 Official implementation of:
-"[Data Augmentation Policy Search for Long-Term Forecasting](https://arxiv.org/abs/2502.03571)". 
+"[Data Augmentation Policy Search for Long-Term Forecasting](https://arxiv.org/abs/2405.00319)". 
 
 ## TL;DR
 
 This paper introduces Time-Series Automatic Augmentation (TSAA), a novel framework designed to improve long-term time-series forecasting by automatically discovering effective data augmentation (DA) policies. While DA has been successful in domains like vision and NLP, time-series tasks remain underexplored due to their unique structure and dynamics. TSAA addresses this gap by combining a curated set of time-series transformations with Bayesian optimization (Tree-structured Parzen Estimator and Expected Improvement) for augmentation policy search and ASHA (Asynchronous Successive Halving) for efficient training. The framework is formulated as a bi-level optimization problem and is computationally streamlined by pretraining models to obtain shared weights, then fine-tuning under different DA policies. Evaluated on standard univariate and multivariate forecasting benchmarks, TSAA consistently improves performance across architectures, offering a principled and practical method for time-series data augmentation.
 ![image](pics/tsaa.png)
-
+![image](pics/example.png)
 
 ### Environment Requirements
 ```
